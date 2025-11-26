@@ -11,10 +11,10 @@ export default function header (){
                     <img className="logo" src={logo} alt="Logo SP Medical" />
                     <div className="space_left">
                         <nav className="links_uteis">
-                            <Link to="/#">Dashboard</Link>
+                            <Link to="/dashboard">Dashboard</Link>
                             <Link to="/consultas">Consultas</Link>
-                            <Link to="/#">Equipe</Link>
-                            <Link to="/#">Contate-nos</Link>              
+                            <Link to="/equipe">Equipe</Link>
+                            <Link to="/contato">Contate-nos</Link>              
                   </nav>
                         
                     </div>

@@ -10,6 +10,7 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Consultas from "./pages/consultas";
 import Home from "./pages/home";
+import Equipe from "./pages/equipe";
 
 const routing = (
   <Router>
@@ -17,6 +18,7 @@ const routing = (
       <Switch>
         <Route path="/dashboard" component={Home} />
         <Route path="/consultas" component={Consultas} />
+        <Route path="/equipe" component={Equipe} />
         <Route exact patch="/">
           <Redirect to="/dashboard" />
         </Route>
