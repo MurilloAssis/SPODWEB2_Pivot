@@ -1,70 +1,149 @@
-# Getting Started with Create React App
+# SPMEDICALGROUP - Sistema de Gestão de Consultas Médicas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Um aplicativo web desenvolvido com React para gerenciar consultas médicas, pacientes e médicos. O sistema fornece uma visão geral centralizada com estatísticas em tempo real e funcionalidades para administração de dados clínicos.
 
-## Available Scripts
+## 📋 Sobre o Projeto
 
-In the project directory, you can run:
+SPMEDICALGROUP é uma aplicação frontend construída com [Create React App](https://github.com/facebook/create-react-app) que oferece:
+
+- **Dashboard com Visão Geral**: Estatísticas de médicos, pacientes e consultas agendadas
+- **Gestão de Consultas**: Interface para visualizar e gerenciar consultas
+- **Cadastro de Pacientes**: Administração de dados de pacientes
+- **Informações da Equipe**: Detalhes dos médicos disponíveis
+- **Contato**: Página para entrar em contato
+- **Design Responsivo**: Interface adaptada para diferentes dispositivos
+
+## 🚀 Como Começar
+
+### Pré-requisitos
+
+- Node.js (v14 ou superior)
+- npm (v6 ou superior)
+
+### Instalação
+
+\`\`\`\`\`\`bash
+# Clone o repositório
+git clone <repository-url>
+
+# Acesse o diretório do projeto
+cd SPODWEB2_Pivot
+
+# Instale as dependências
+npm install
+\`\`\`\`\`\`
+
+## 📦 Scripts Disponíveis
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Inicia o servidor de desenvolvimento.
+Acesse [http://localhost:3000](http://localhost:3000) para visualizar no navegador.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+A página será recarregada quando você fazer alterações, e erros de lint aparecerão no console.
+
+\`\`\`\`\`\`bash
+npm start
+\`\`\`\`\`\`
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Executa os testes no modo interativo de observação.
+
+\`\`\`\`\`\`bash
+npm test
+\`\`\`\`\`\`
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Cria um build otimizado para produção na pasta `build`.
+O build é minificado e os nomes dos arquivos incluem hashes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+\`\`\`\`\`\`bash
+npm run build
+\`\`\`\`\`\`
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Nota: esta é uma operação irreversível!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Remove a única dependência de build do projeto e copia todas as configurações e dependências para o seu projeto.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+\`\`\`\`\`\`bash
+npm run eject
+\`\`\`\`\`\`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🛠️ Tecnologias Utilizadas
 
-## Learn More
+- **React** 17.0.2 - Biblioteca para construção de interfaces
+- **React Router DOM** 5.2.0 - Roteamento de páginas
+- **Axios** 0.24.0 - Cliente HTTP para requisições
+- **CSS Modules** - Estilização modular e escopo local
+- **React Scripts** 4.0.3 - Ferramentas de build e desenvolvimento
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📁 Estrutura do Projeto
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+\`\`\`\`\`\`
+SPODWEB2_Pivot/
+├── public/
+│   └── index.html
+├── src/
+│   ├── assets/
+│   │   ├── css/
+│   │   │   ├── consultasAdm.css
+│   │   │   ├── contatenos.module.css
+│   │   │   ├── home.module.css
+│   │   │   ├── login.css
+│   │   │   └── style.css
+│   │   └── img/
+│   ├── components/
+│   │   ├── Footer/
+│   │   │   └── footer.jsx
+│   │   └── Header/
+│   │       └── header.jsx
+│   ├── data/
+│   │   ├── consultas.json
+│   │   ├── medicos.json
+│   │   └── pacientes.json
+│   ├── pages/
+│   │   ├── consultas.jsx
+│   │   ├── contatenos.jsx
+│   │   ├── equipe.jsx
+│   │   └── home.jsx
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   ├── index.css
+│   └── reportWebVitals.js
+├── package.json
+└── README.md
+\`\`\`\`\`\`
 
-### Code Splitting
+## 📄 Páginas Principais
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Home** - Dashboard com visão geral do sistema (médicos, pacientes e consultas agendadas)
+- **Consultas** - Administração e consulta de agendamentos
+- **Equipe** - Informações sobre os médicos disponíveis
+- **Contato** - Formulário de contato e informações
 
-### Analyzing the Bundle Size
+## 🔧 Configuração
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+O projeto utiliza `--openssl-legacy-provider` nos scripts de start e build para compatibilidade com versões antigas de dependências.
 
-### Making a Progressive Web App
+## 📚 Aprendizado Adicional
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [Documentação do Create React App](https://facebook.github.io/create-react-app/docs/getting-started)
+- [Documentação do React](https://reactjs.org/)
+- [Documentação do React Router](https://reactrouter.com/)
+- [Documentação do Axios](https://axios-http.com/)
 
-### Advanced Configuration
+## 📝 Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Este projeto é privado e foi desenvolvido para fins educacionais.
 
-### Deployment
+## 👤 Desenvolvedor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+SPODWEB2_Pivot - Projeto de Estudo Pessoal
+- Gustavo Gouvea Andrade - SP3076725
+- Luciano Ricardo Paim de Araujo - SP3153827
+- Murillo Andrade Assis - SP3217043
