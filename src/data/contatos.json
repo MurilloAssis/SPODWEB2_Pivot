@@ -1,0 +1,32 @@
+[
+    {
+      "tipo": "Telefone",
+      "valor": "(11) 3456-7890",
+      "icone": "📞",
+      "descricao": "Atendimento de segunda a sexta, das 8h às 18h"
+    },
+    {
+      "tipo": "WhatsApp",
+      "valor": "(11) 98765-4321",
+      "icone": "💬",
+      "descricao": "Atendimento 24h para emergências"
+    },
+    {
+      "tipo": "E-mail",
+      "valor": "contato@clinicasaude.com.br",
+      "icone": "📧",
+      "descricao": "Respondemos em até 24 horas"
+    },
+    {
+      "tipo": "Endereço",
+      "valor": "Rua das Flores, 123 - Jardim Saúde",
+      "icone": "📍",
+      "descricao": "São Paulo - SP, CEP: 01234-567"
+    },
+    {
+      "tipo": "Horário de Funcionamento",
+      "valor": "Segunda a Sexta: 7h às 19h",
+      "icone": "⏰",
+      "descricao": "Sábados: 8h às 12h"
+    }
+  ]
