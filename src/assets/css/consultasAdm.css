@@ -105,3 +105,31 @@ align-items: center;
     }
   }
 
+/* Estilizar placeholder */
+.input_form::placeholder {
+  text-align: center;
+  font-family: inherit;
+  font-size: 0.7rem;
+}
+
+/* Para navegadores WebKit (Chrome, Safari, Edge) */
+.input_form::-webkit-input-placeholder {
+  text-align: center;
+}
+
+/* Para Firefox */
+.input_form::-moz-placeholder {
+  text-align: center;
+}
+
+/* Para Internet Explorer */
+.input_form:-ms-input-placeholder {
+  text-align: center;
+}
+
+/* Garantir que input e select tenham a mesma fonte */
+.input_form {
+  font-family: inherit;
+  font-size: 1rem;
+  text-align: center;
+}
