@@ -1,42 +1,34 @@
 [
-    {
-      "idConsulta": 301,
-      "idMedico": 101,
-      "idPaciente": 201,
-      "dataHora": "2025-11-20T10:00:00",
-      "status": "Agendada",
-      "observacoes": "Primeira avaliação cardiológica."
-    },
-    {
-      "idConsulta": 302,
-      "idMedico": 102,
-      "idPaciente": 202,
-      "dataHora": "2025-11-20T14:30:00",
-      "status": "Agendada",
-      "observacoes": "Retorno para avaliação de joelho."
-    },
-    {
-      "idConsulta": 303,
-      "idMedico": 103,
-      "idPaciente": 203,
-      "dataHora": "2025-11-21T09:00:00",
-      "status": "Cancelada",
-      "observacoes": "Paciente ligou para reagendar."
-    },
-    {
-      "idConsulta": 304,
-      "idMedico": 104,
-      "idPaciente": 204,
-      "dataHora": "2025-11-21T11:30:00",
-      "status": "Realizada",
-      "observacoes": "Check-up de rotina infantil."
-    },
-    {
-      "idConsulta": 305,
-      "idMedico": 105,
-      "idPaciente": 205,
-      "dataHora": "2025-11-22T16:00:00",
-      "status": "Agendada",
-      "observacoes": "Exames de rotina anual."
-    }
-  ]
+  {
+    "idConsulta": 301,
+    "idMedico": 101,
+    "idPaciente": 201,
+    "dataHora": "2025-11-20T10:00:00",
+    "status": "Agendada",
+    "observacoes": "Primeira avaliação cardiológica."
+  },
+  {
+    "idConsulta": 303,
+    "idMedico": 103,
+    "idPaciente": 203,
+    "dataHora": "2025-11-21T09:00:00",
+    "status": "Cancelada",
+    "observacoes": "Paciente ligou para reagendar."
+  },
+  {
+    "idConsulta": 304,
+    "idMedico": 104,
+    "idPaciente": 204,
+    "dataHora": "2025-11-21T11:30:00",
+    "status": "Realizada",
+    "observacoes": "Check-up de rotina infantil."
+  },
+  {
+    "idConsulta": 305,
+    "idMedico": 105,
+    "idPaciente": 205,
+    "dataHora": "2025-11-22T16:00:00",
+    "status": "Agendada",
+    "observacoes": "Exames de rotina anual."
+  }
+]
