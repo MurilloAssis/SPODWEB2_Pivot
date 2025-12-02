@@ -57,9 +57,15 @@ export default function Consultas() {
         await consultaService.update(editingId, formData);
         alert("Consulta atualizada com sucesso!");
         setEditingId(null);
+        setTimeout(() => {
+          window.location.reload();
+        }, 1000);
       } else {
         await consultaService.create(formData);
         alert("Consulta agendada com sucesso!");
+        setTimeout(() => {
+          window.location.reload();
+        }, 1000);
       }
       
       carregarDados();
@@ -87,6 +93,9 @@ export default function Consultas() {
         await consultaService.delete(id);
         alert("Consulta deletada com sucesso!");
         carregarDados();
+        setTimeout(() => {
+          window.location.reload();
+        }, 1000);
       } catch (error) {
         alert("Erro ao deletar: " + error.message);
       }

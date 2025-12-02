@@ -48,9 +48,15 @@ export default function Equipe() {
         await medicoService.update(editingId, formData);
         alert("Médico atualizado com sucesso!");
         setEditingId(null);
+        setTimeout(() => {
+            window.location.reload();
+          }, 1000);
       } else {
         await medicoService.create(formData);
         alert("Médico adicionado com sucesso!");
+        setTimeout(() => {
+            window.location.reload();
+          }, 1000);
       }
       
       carregarMedicos();
@@ -72,6 +78,9 @@ export default function Equipe() {
         await medicoService.delete(id);
         alert("Médico deletado com sucesso!");
         carregarMedicos();
+        setTimeout(() => {
+            window.location.reload();
+          }, 1000);
       } catch (error) {
         alert("Erro ao deletar: " + error.message);
       }
