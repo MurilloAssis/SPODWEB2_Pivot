@@ -11,6 +11,7 @@ import reportWebVitals from "./reportWebVitals";
 import Consultas from "./pages/consultas";
 import Home from "./pages/home";
 import Equipe from "./pages/equipe";
+import Contatenos from "./pages/contatenos";
 
 const routing = (
   <Router>
@@ -19,6 +20,7 @@ const routing = (
         <Route path="/dashboard" component={Home} />
         <Route path="/consultas" component={Consultas} />
         <Route path="/equipe" component={Equipe} />
+        <Route path="/contatenos" component={Contatenos} />
         <Route exact patch="/">
           <Redirect to="/dashboard" />
         </Route>

@@ -14,7 +14,7 @@ export default function header (){
                             <Link to="/dashboard">Dashboard</Link>
                             <Link to="/consultas">Consultas</Link>
                             <Link to="/equipe">Equipe</Link>
-                            <Link to="/contato">Contate-nos</Link>              
+                            <Link to="/contatenos">Contate-nos</Link>              
                   </nav>
                         
                     </div>

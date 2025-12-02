@@ -1,4 +1,5 @@
 import React, { useState, Fragment } from "react";
+import styles from "../assets/css/home.module.css";
 
 import Header from "../components/Header/header";
 import Footer from "../components/Footer/footer";
@@ -18,19 +19,22 @@ const Home = () => {
   return (
     <Fragment>
       <Header/>
-      <h2>✨ Visão Geral do Sistema</h2>
+      <div className={styles.container}>
+        <h2 className={styles.title}>✨ Visão Geral do Sistema</h2>
 
-      <div style={{ display: "flex", gap: "20px", justifyContent: "center" }}>
-       
-        <p>
-          Total de Médicos: <strong>{totalMedicos}</strong>
-        </p>
-        <p>
-          Total de Pacientes: <strong>{totalPacientes}</strong>
-        </p>
-        <p>
-          Consultas Agendadas: <strong>{consultasAgendadas}</strong>
-        </p>
+        <div className={styles.statsContainer}>
+          <div className={styles.statItem}>
+            Total de Médicos: <strong>{totalMedicos}</strong>
+          </div>
+          <div className={styles.statItem}>
+            Total de Pacientes: <strong>{totalPacientes}</strong>
+          </div>
+        </div>
+        <div className={styles.statsContainer}>
+          <div className={styles.statItem}>
+            Consultas Agendadas: <strong>{consultasAgendadas}</strong>
+          </div>
+        </div>
       </div>
       <Footer/>
     </Fragment>

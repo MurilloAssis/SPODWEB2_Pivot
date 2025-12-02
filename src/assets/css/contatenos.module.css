@@ -1,0 +1,199 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .title {
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+  }
+  
+  .subtitle {
+    color: #7f8c8d;
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .contactsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+  }
+  
+  .contactCard {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-left: 5px solid #3498db;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contactCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .contactIcon {
+    font-size: 3em;
+    margin-bottom: 15px;
+  }
+  
+  .contactType {
+    color: #2c3e50;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .contactValue {
+    color: #3498db;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  .contactDescription {
+    color: #7f8c8d;
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+  
+  .emergencySection {
+    margin-bottom: 50px;
+  }
+  
+  .emergencyCard {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.3);
+  }
+  
+  .emergencyTitle {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+  
+  .emergencyText {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  .emergencyNote {
+    font-size: 0.9em;
+    opacity: 0.9;
+  }
+  
+  .formSection {
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+  }
+  
+  .formTitle {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+  }
+  
+  .contactForm {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .formRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .formLabel {
+    display: block;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  .formInput,
+  .formTextarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+  }
+  
+  .formInput:focus,
+  .formTextarea:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  .formTextarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .submitButton {
+    background: #3498db;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 30px auto 0;
+  }
+  
+  .submitButton:hover {
+    background: #2980b9;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .formRow {
+      grid-template-columns: 1fr;
+    }
+    
+    .contactsGrid {
+      grid-template-columns: 1fr;
+    }
+    
+    .title {
+      font-size: 2em;
+    }
+    
+    .container {
+      padding: 15px;
+    }
+    
+    .formSection {
+      padding: 25px;
+    }
+  }
